@@ -2,19 +2,212 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    @media (max-width: 768px) {
+      table {
+        width: 360px !important;
+      }
+
+      td {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+
+      .logo-img {
+        height: 20px !important;
+        padding-bottom: 13px !important;
+      }
+
+      .copyright-text {
+        display: block !important;
+      }
+
+      .disclaimer-text {
+        padding-top: 32px !important;
+      }
+
+      .thanks-msg {
+        font-size: 25px !important;
+        line-height: 31px !important;
+        padding-top: 48px !important;
+      }
+
+      .you-like-to {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        padding-top: 24px !important;
+      }
+
+      .topic {
+        font-size: 13px !important;
+        line-height: 16px !important;
+      }
+
+      .your-details {
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+
+      .twitter,
+      .line,
+      .youtube {
+        padding-left: 4px !important;
+      }
+    }
+  </style>
 </head>
 
-<body>
-    <table>
-        <tr>
-            <td><img src="https://www.fwd.com.my/~/media/Images/FWDMY/Header/FWDlogov2.png?h=199&la=en&w=447&hash=369BD7B280A34AEDAEAA9A8FFB7A3BE034964592"
-                alt="fwd logo" /></td>
-        </tr>
-    </table>
+<body style="padding: 0; margin: 0;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+    style="border-bottom: 1px solid #E6E6E6;">
+    <tbody>
+      <tr>
+        <td style="padding: 20px 48px" align="left">
+          <img class="logo-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVd0oatb26V_6DyikFiFmvBxlvBrlHiYqldSg2a4-6FB3jzm21g&s"
+            height="30" alt="FWD Logo">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+    <tbody>
+      <tr>
+        <td class="thanks-msg"
+          style="font-family: 'FWD Circular TT Black', sans-serif; font-size: 31px; line-height: 39px; font-weight: 900; color: #333333; padding-left: 48px; padding-right: 48px; padding-top: 64px;">
+          Please assist with enquiry
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="font-family: 'FWD Circular TT Book', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; color: #333333; padding-top: 24px; padding-bottom: 48px; padding-left: 48px; padding-right: 48px;">
+          <p>Dear Call Center,</p>
+          <p style="padding-top: 12px; padding-bottom: 12px">We’ve received an online enquiry with details below. Please
+            contact the user as requested. </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left: 48px; padding-right: 48px;">
+          <hr style="height: 1px; background-color: #E6E6E6; margin: 0; opacity: 0.3;">
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="you-like-to" style="font-family: 'FWD Circular TT Black' , sans-serif; font-size: 20px; line-height: 25px;
+                font-weight: 900; color: #333333; padding-top: 14px; padding-left: 48px; padding-right: 48px;">Topic
+        </td>
+      </tr>
+      <tr>
+        <td id="queryReason"
+          style="font-family: 'FWD Circular TT Book' , sans-serif; font-size: 20px; line-height: 30px;
+                font-weight: 300; color: #333333; padding-bottom: 24px; padding-left: 48px; padding-right: 48px; padding-top: 24px;">
+          ####</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 48px; padding-right: 48px;">
+          <hr style="height: 1px; background-color: #E6E6E6; margin: 0; opacity: 0.3;">
+          </hr>
+        </td>
+      </tr>
+      <tr>
+        <td class="your-details" style="font-family: 'FWD Circular TT Black' , sans-serif; font-size: 20px; line-height: 25px;
+                font-weight: 900; color: #333333; padding-top: 38px; padding-left: 48px; padding-right: 48px;">Their
+          details</td>
+      </tr>
+      <tr>
+        <td id="firstName" style="font-family: 'FWD Circular TT Bold' , sans-serif; font-size: 16px; line-height: 24px;
+                font-weight: 300; color: #333333; padding-top: 24px; padding-left: 48px; padding-right: 48px;">Their
+          name is <b>#### <span id="lastName">####</span></b>
+        </td>
+      </tr>
+      <tr>
+        <td id="cellPhone" style="font-family: 'FWD Circular TT Bold' , sans-serif; font-size: 16px; line-height: 24px;
+                font-weight: 300; color: #333333; padding-top: 28px; padding-left: 48px; padding-right: 48px;">Phone
+          number is <b>####</b>
+        </td>
+      </tr>
+      <tr>
+        <td id="email" style="font-family: 'FWD Circular TT Bold' , sans-serif; font-size: 16px; line-height: 24px;
+                font-weight: 300; color: #333333; padding-top: 28px; padding-left: 48px; padding-right: 48px;">Email
+          address is <b>####</b>
+        </td>
+      </tr>
+      <tr>
+        <td id="prefferedContectMethod"
+          style="font-family: 'FWD Circular TT Bold' , sans-serif; font-size: 16px; line-height: 24px;
+                font-weight: 300; color: #333333; padding-top: 28px; padding-bottom: 24px; padding-left: 48px; padding-right: 48px;">
+          Contact preference is <b>#### <span id="prefferedTime">(####</span><span id="prefferedDay">, ####)</span></b>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left: 48px; padding-right: 48px;">
+          <hr style="height: 1px; background-color: transparent; margin: 0; opacity: 0.3;">
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="font-family: 'FWD Circular TT Book' , sans-serif; font-size: 16px; line-height: 24px;
+                font-weight: 300; color: #333333; padding-top: 48px; padding-bottom: 64px; padding-left: 48px; padding-right: 48px;">
+          Thank you.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgColor="#F2F2F2">
+  </table>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgColor="#333333">
+    <tbody>
+      <tr>
+        <td class="disclaimer-text" style="font-family: 'FWD Circular TT Book' , sans-serif; font-size: 13px; line-height: 20px;
+                font-weight: 300; color: #FFFFFF; padding: 48px 48px 24px;">
+          This
+          is a system generated message.
+          Please do not reply to this email. You are receiving this email because you recently contacted FWD.
+          Your
+          privacy is important to us. Read our <a href="#" style="color: #FFFFFF;">privacy policy</a>.
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0 48px">
+          <hr style="height: 1px; background-color: #8C8C8C; margin: 0; opacity: 0.3;">
+          </hr>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgColor="#333333">
+    <tbody>
+      <tr>
+        <td class="copyright-text" style="font-family: 'FWD Circular TT Book' , sans-serif; font-size: 13px; line-height: 20px;
+                font-weight: 300; color: #8C8C8C; padding-left: 48px; padding-top: 24px; padding-bottom: 52px;">
+          © Copyright 2020 FWD Thailand.
+        </td>
+        <td class="facebook" width="24" height="24" style="padding-top: 24px; padding-bottom: 52px;">
+          <a href="#"><img src="https://images-eu.ssl-images-amazon.com/images/I/513QyICz-NL.png" alt="Facebook"
+              width="24" height="24" /></a>
+        </td>
+        <td class="youtube" width="24" height="24" style="padding-left: 16px; padding-top: 24px; padding-bottom: 52px;">
+          <a href="#"><img src="https://images-eu.ssl-images-amazon.com/images/I/513QyICz-NL.png" alt="Youtube"
+              width="24" height="24" /></a>
+        </td>
+        <td class="line" width="24" height="24" style="padding-left: 16px; padding-top: 24px; padding-bottom: 52px;">
+          <a href="#"><img src="https://images-eu.ssl-images-amazon.com/images/I/513QyICz-NL.png" alt="Line" width="24"
+              height="24" /></a>
+        </td>
+        <td class="twitter" width="24" height="24"
+          style="padding-right: 48px; padding-left: 16px; padding-top: 24px; padding-bottom: 52px;">
+          <a href="#"><img src="https://images-eu.ssl-images-amazon.com/images/I/513QyICz-NL.png" alt="Twitter"
+              width="24" height="24" /></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 
 </html>

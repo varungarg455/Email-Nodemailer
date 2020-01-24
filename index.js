@@ -4,9 +4,9 @@ const hbs = require("nodemailer-express-handlebars");
 
 //Step 1
 let transporter = nodemailer.createTransport({
-  //service: "gmail",
-  host: "localhost",
-  port: 25000,
+  service: "gmail",
+  //host: "localhost",
+  //port: 25000,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
@@ -23,6 +23,9 @@ transporter.use(
       defaultLayout: "index",
       partialsDir: __dirname + "/views/"
     },
+    data: {
+        name: 'Varun Garg'
+    },
     viewPath: "./views/"
   })
 );
@@ -30,9 +33,10 @@ transporter.use(
 //Step 2
 let mailOptions = {
   from: "varungarg455@gmail.com",
-  to: "varungarg455@gmail.com",
+  //to: "jatin.arora2@publicissapient.com",
+  //to: ["varungarg455@gmail.com", "varun.garg@publicissapient.com"],
+  to: "varun.garg@publicissapient.com",
   subject: "This is a test mail",
-  text: "<b>It works</b>",
   template: "index"
 };
 
